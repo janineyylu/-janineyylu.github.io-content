@@ -22,6 +22,8 @@ cd $BLOG_GITHUB_CHECKOUT
 
 cp -r $OUTPUT_DIR/* . 
 
+pwd 
+ls -la  
 git status
 git add * 
 git commit -am "new version $NOW "
