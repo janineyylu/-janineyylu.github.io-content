@@ -22,7 +22,7 @@ jobs:
           # extended: true
 
       - name: git clone
-        run:  git clone git@github.com:janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/site
+        run:  git clone https://github.com/janineyylu/janineyylu.github.io-content.git ${GITHUB_WORKSPACE}/site
 
       - name: Build
         run: hugo -D 
