@@ -1,11 +1,14 @@
 #!/usr/bin/env bash 
 
 set -e 
-git config --global user.email "janinelutw@gmail.com"
-git config --global user.name "Janine Lu"
 
 BLOG_GITHUB_CHECKOUT=${GITHUB_WORKSPACE}/checkout 
 OUTPUT_DIR=${GITHUB_WORKSPACE}/public
+
+git config --global user.email "janinelutw@gmail.com"
+git config --global user.name "Janine Lu"
+
+git clone git@github.com:janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/site
 
 rm -rf ${OUTPUT_DIR}
 hugo -D 
