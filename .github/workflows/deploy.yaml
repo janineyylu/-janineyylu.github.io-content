@@ -15,6 +15,11 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - uses: webfactory/ssh-agent@v0.2.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -22,7 +27,7 @@ jobs:
           # extended: true
 
       - name: git clone
-        run:  git clone https://github.com/janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/checkout
+        run:  git clone git@github.com:janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/checkout
 
       - name: Build
         run: hugo -D 
