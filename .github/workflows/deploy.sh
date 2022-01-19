@@ -8,7 +8,7 @@ OUTPUT_DIR=${GITHUB_WORKSPACE}/public
 git config --global user.email "janinelutw@gmail.com"
 git config --global user.name "Janine Lu"
 
-git clone git@github.com:janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/site
+
 
 echo "got this far.."
 

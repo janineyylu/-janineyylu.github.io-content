@@ -21,6 +21,9 @@ jobs:
           hugo-version: '0.83.1'
           # extended: true
 
+      - name: git clone
+        run:  git clone git@github.com:janineyylu/janineyylu.github.io.git ${GITHUB_WORKSPACE}/site
+
       - name: Build
         run: hugo -D 
 
