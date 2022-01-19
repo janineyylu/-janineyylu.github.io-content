@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 
-
+set -e 
 git config --global user.email "janinelutw@gmail.com"
 git config --global user.name "Janine Lu"
 
