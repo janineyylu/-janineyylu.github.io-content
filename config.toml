@@ -1,3 +1,4 @@
 baseURL = 'http://janineyylu.com'
 languageCode = 'en-us'
 title = "Janine Lu's Blog"
+theme = "ananke"
